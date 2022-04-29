@@ -91,7 +91,7 @@ The first class is an `Employee` parent class with the following properties and 
 
 * `getEmail()`
 
-* `getRole()`&mdash;returns `'Employee'`
+* `getRole()r`&mdash;eturns `'Employee'`
 
 The other three classes will extend `Employee`.
 
