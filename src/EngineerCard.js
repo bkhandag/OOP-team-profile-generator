@@ -12,7 +12,7 @@ function EngineerCard (data) {
                     <ul class="list-group list-group-flush">
                     <li class="list-group-item">ID: ${data.getId()}</li>
                     <li class="list-group-item">Email: ${data.getEmail()}</li>
-                    <li class="list-group-item">Office Number: ${data.getGithub()}</li>
+                    <li class="list-group-item">Github: ${data.getGithub()}</li>
                     </ul>
                 </div>
             </div>

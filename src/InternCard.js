@@ -12,7 +12,7 @@ function InternCard (data) {
                     <ul class="list-group list-group-flush">
                     <li class="list-group-item">ID: ${data.getId()}</li>
                     <li class="list-group-item">Email: ${data.getEmail()}</li>
-                    <li class="list-group-item">Office Number: ${data.getSchool()}</li>
+                    <li class="list-group-item">School: ${data.getSchool()}</li>
                     </ul>
                 </div>
             </div>
