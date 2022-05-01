@@ -3,7 +3,7 @@
 ![License](https://img.shields.io/badge/license-MIT_License-red.svg)
 
 ## Description:
-A team profile is generated when "node index.js" command is called in the terminal window. This is done by asking a series of questions to the user regarding the role of employee, their name, id, email and other attributes. The responses provided by user are used to create contents of the index,html file.
+A team profile is generated when "node index.js" command is called in the terminal window. This is done by asking a series of questions to the user regarding the role of employee, their name, id, email and other attributes. The responses provided by user are used to create contents of the index,html file. This application uses the principles of object oriented programming (OOP).
 
 ## Table of Contents:
 
