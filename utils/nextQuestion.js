@@ -4,25 +4,11 @@ const nextQuestion = [
         name: 'role',
         message: 'What is your role?',
         choices: [
-            'Manager',
             'Engineer',
             'Intern',
-            'None',
+            'Finish building my team!',
         ]
       },
-      {
-        type: 'input',
-        name: 'github',
-        message: 'What is your github?',
-      },
-      {
-        type: 'input',
-        name: 'school',
-        message: 'What school did you go to?',
-      },
-      {
-        type: 'input',
-        name: 'githubUsername',
-        message: 'What is your Github username?',
-      },
 ];
+
+module.exports = nextQuestion;
