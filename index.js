@@ -1,4 +1,4 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
 const path = require("path");
@@ -22,15 +22,15 @@ const Footer = require("./src/Footer");
 
 
 const team = [] //array that I push team members to
-var generateHTMLFile = "";
+var generateHTMLFile = ""; //string that is used to generate html file
 
-// TODO: Create a function to write README file
+// Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(path.join(process.cwd(), fileName), data, function(err){
         err ? console.error(err) : console.log('Success!')});
 }
 
-// TODO: Create a function to initialize app
+// Create a function to initialize app
 function init() {
   //addManager function call
   addManager()
@@ -47,7 +47,7 @@ function addManager() {
           response.email,
           response.officeNumber
       )
-  // return newManager;
+  // add a new Manager to array team;
     team.push(newManager);
     console.log(team);
     nextTeamMember();
@@ -67,6 +67,7 @@ function addEngineer() {
       response.email,
       response.github
     )
+    //add new engineer to array team
     team.push(newEngineer);
     console.log(team);
     nextTeamMember();
@@ -84,12 +85,14 @@ function addEngineer() {
       response.email,
       response.school
     )
+    //add a new intern to array team
     team.push(newIntern);
     console.log(team);
     nextTeamMember();
   });
   }
 
+  //Function runs when user selects finish my team option in the list
     function finishTeam () {
       generateHTML(team);
       console.log("Now generating your index.html ...");
@@ -97,6 +100,7 @@ function addEngineer() {
 
 }
 
+//Generates the html file string
 function generateHTML(team) {
   generateHTMLFile += Header();
   team.forEach(element => {
