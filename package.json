@@ -19,6 +19,6 @@
   "homepage": "https://github.com/bkhandag/OOP-team-profile-generator#readme",
   "dependencies": {
     "inquirer": "^8.2.2",
-    "jest": "^28.0.2"
+    "jest": "^28.0.3"
   }
 }
