@@ -14,11 +14,15 @@ const Intern = require("./lib/Intern");
 
 const nextQuestion = require("./utils/nextQuestion");
 
+const Header = require("./src/Header");
+const ManagerCard = require("./src/ManagerCard");
+const EngineerCard = require("./src/EngineerCard");
+const InternCard = require("./src/InternCard");
+const Footer = require("./src/Footer");
+
 
 const team = [] //array that I push team members to
-// TODO: Create an array of questions for user input
-//create 4 enquiere, manager, enginerr, intern, options - add new member -engineer, intern or none
-//require each class, create your own isntance from class, add it to var array of all meembers, pass this variable to generate html
+var generateHTMLFile = "";
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -87,10 +91,25 @@ function addEngineer() {
   }
 
     function finishTeam () {
-
+      generateHTML(team);
       console.log("Now generating your index.html ...");
-      writeToFile("/dist/index.html", generateHTML(response))
+      writeToFile("/dist/index.html", generateHTMLFile);
 
+}
+
+function generateHTML(team) {
+  generateHTMLFile += Header();
+  team.forEach(element => {
+    const teamRole = element.getRole();
+    if (teamRole == "Manager") {
+      generateHTMLFile += ManagerCard(element);
+    } else if (teamRole == "Intern") {
+      generateHTMLFile += InternCard(element);
+    } else if (teamRole == "Engineer") {
+      generateHTMLFile += EngineerCard(element);
+    }
+  generateHTMLFile += Footer();
+});
 }
 
 function nextTeamMember() {
