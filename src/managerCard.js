@@ -1,22 +1,23 @@
 function ManagerCard (data) { 
 
-    return `<div class="col-12 col-sm-6 col-lg-4 mb-3">
-    <div class="card">
-      <div class="card-header">
-        <h3>${data.getName()}</h3>
-        <h4> <i class="fa-solid fa-mug-hot"></i> ${data.getRole()}</h4>
-      </div>
-      <div class="card-body">
+    return `
+    <div class="col-12 col-sm-6 col-lg-4 mb-3">
         <div class="card">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">ID: ${data.getId()}</li>
-              <li class="list-group-item">Email: ${data.getEmail()}</li>
-              <li class="list-group-item">Office Number: ${data.getOfficeNumber()}</li>
-            </ul>
-          </div>
-      </div>
-    </div>
-  </div>`
+            <div class="card-header text-light bg-secondary">
+                <h3>${data.getName()}</h3>
+                <h4> <i class="fa-solid fa-mug-hot"></i> ${data.getRole()}</h4>
+            </div>
+            <div class="card-body">
+                <div class="card">
+                    <ul class="list-group list-group-flush">
+                    <li class="list-group-item">ID: ${data.getId()}</li>
+                    <li class="list-group-item">Email: ${data.getEmail()}</li>
+                    <li class="list-group-item">Office Number: ${data.getOfficeNumber()}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>`
 }
 
 module.exports = ManagerCard;
