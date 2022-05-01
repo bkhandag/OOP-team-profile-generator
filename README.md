@@ -26,11 +26,11 @@ A team profile is generated when "node index.js" command is called in the termin
 
 * The application includes `Employee`, `Manager`, `Engineer`, and `Intern` classes. The tests for these classes are in the `_tests_` directory.
 
-* This application uses [Jest](https://www.npmjs.com/package/jest) for running the unit tests and [Inquirer](https://www.npmjs.com/package/inquirer) for collecting input from the user. The application will be invoked by using the following command:
+* This application uses [Jest](https://www.npmjs.com/package/jest) for running the unit tests and [Inquirer](https://www.npmjs.com/package/inquirer) for collecting input from the user. 
 ```bash
-node index.js
-//Tests can be run with following command:
-nmp run test
+node index.js //The application will be invoked by using this command
+
+nmp run test //Tests can be run using this command
 ```
 
 ## Video:
